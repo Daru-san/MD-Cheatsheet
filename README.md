@@ -119,13 +119,17 @@ Content Cell  | Content Cell | Content Cell
 ```
 
 ```nix
-    {pkgs, ...}: let 
-        var = "{pkgs.var}/bin/var";
-         in
-        programs.var = {
+    {pkgs, ...}: 
+        let 
+          var = "${pkgs.var}/bin/var";
+        in
+          programs.var = {
             foo = 1;
             bar = false;
-        };
+            a = {
+                b = "x";
+            };
+          };
     }
 ```
 
