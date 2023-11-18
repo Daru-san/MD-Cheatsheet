@@ -1,6 +1,6 @@
 Markdown Cheatsheet<a name="TOP"></a>
 ===================
-
+Forked from [tchapi's repo](https://github.com/tchapi/markdown-cheatsheet), with my own additions to use as a personal reference repo, no real changes are made here, the originals great already. 
 - - - - 
 # Heading 1 #
 
@@ -117,6 +117,18 @@ Content Cell  | Content Cell | Content Cell
         }
     }
 ```
+
+```nix
+    {pkgs, ...}: let 
+        var = "{pkgs.var}/bin/var";
+         in
+        programs.var = {
+            foo = 1;
+            bar = false;
+        };
+    }
+```
+
 
     Markup : ```javascript
              ```
