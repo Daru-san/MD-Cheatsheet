@@ -195,6 +195,14 @@ _Horizontal line :_
 
     Markup :  - - - -
 
+Comment :
+<!---
+This is damn comment 
+--->
+    Markup: <!---
+            Whatever the heck you put in your comments
+            --->
+
 _Image with alt :_
 
 ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
